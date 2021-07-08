@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Ejercicios DOM</title>
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+			integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+			crossorigin="anonymous"
+		/>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+		<link href="./hamburgers/dist/hamburgers.css" rel="stylesheet" />
+		<link rel="stylesheet" href="index.css" />
+	</head>
+	<body class="body">
+		<header class="header"><h1 class="h1">Ejercicios del DOM</h1></header>
+		<main class="main">
+			<button class="hamburger hamburger--collapse" type="button">
+				<span class="hamburger-box">
+					<span class="hamburger-inner"></span>
+				</span>
+			</button>
+			<a id="section1-button" href="#section1"
+				><button class="back-start"><i class="fas fa-chevron-up"></i></button
+			></a>
+			<button class="change-theme">
+				<i class="icon-theme fas fa-moon"></i>
+			</button>
+			<div class="menu-slider">
+				<div class="menu-slider-p">
+					<a href="#section1"
+						><p class="close">Reloj Digital y Alarma Sonora</p></a
+					>
+					<a href="#section2"><p class="close">Eventos de teclado</p></a>
+					<a href="#section3"><p class="close">Countdown</p></a>
+					<a href="#section4"><p class="close">Responsive con JavaScript</p></a>
+					<a href="#section5"><p class="close">Responsive tester</p></a>
+					<a href="#section6"><p class="close">User Agent</p></a>
+					<a href="#section7"><p class="close">Webcam</p></a>
+					<a href="#section8"><p class="close">Geolocalización</p></a>
+					<a href="#section9"><p class="close">Fitro de busqueda</p></a>
+					<a href="#section10"><p class="close">Sorteo Digital</p></a>
+					<a href="#section11"><p class="close">Responsive Slider</p></a>
+					<a href="#section12"><p class="close">Video Inteligente</p></a>
+					<a href="#section13"><p class="close">Formulario 1</p></a>
+					<a href="#section14"><p class="close">Narrador</p></a>
+
+				</div>
+			</div>
+			<div class="section1 section" id="section1">
+				<h2>Reloj Digital y Alarma Sonora</h2>
+				<div class="clock">
+					<button class="btn-reloj-start">Iniciar Reloj</button>
+					<button class="btn-reloj-end">Detener Reloj</button>
+					<button class="btn-start-alarm">Iniciar alarma</button>
+					<button class="btn-stop-alarm">Detener alarma</button>
+				</div>
+			</div>
+			<div class="section2 section" id="section2">
+				<h2>Eventos de Teclado</h2>
+				<div class="container-event">
+					<div class="event-to-move"></div>
+				</div>
+			</div>
+			<div class="section3 section" id="section3">
+				<h2>Año nuevo</h2>
+				<p class="countdown">
+					<span class="days-countdown"></span> dias
+					<span class="hours-countdown"></span> horas
+					<span class="minutes-countdow"></span> minutos
+					<span class="seconds-countdow"></span> segundos
+				</p>
+			</div>
+			<div class="section4 section" id="section4">
+				<h2>Responsive con JavaScript</h2>
+				<div class="video-youtube"></div>
+				<div class="maps-embed"></div>
+			</div>
+			<div class="section5 section" id="section5">
+				<h2 id="h2-responsive-tester">Responsive tester</h2>
+				<div class="tester-form">
+					<input
+						type="url"
+						name="URL"
+						id="tester-responsive-url"
+						placeholder="URL"
+					/>
+					<input
+						type="number"
+						name=""
+						id="tester-responsive-width"
+						placeholder="Ancho"
+					/>
+					<input
+						type="number"
+						name=""
+						id="tester-responsive-height"
+						placeholder="Alto"
+					/>
+				</div>
+				<div class="tester-submit">
+					<input type="button" value="Probar" class="tester-submit-test" />
+					<input type="button" value="Cerrar" class="tester-close" />
+				</div>
+			</div>
+			<div class="section6 section" id="section6">
+				<h2>Deteccion de Dispositivos (User Agent)</h2>
+				<p class="user-agent-text section6-p">User agent:</p>
+				<p class="user-agent-platform section6-p">Plataforma:</p>
+				<p class="user-agent-navigator section6-p">Navegador:</p>
+				<p class="only-browser section6-p"></p>
+				<p class="only-device section6-p"></p>
+			</div>
+			<div class="section7 section" id="section7">
+				<h2>Deteccion de Camara Web</h2>
+				<div class="container-div">
+					<video src="" id="video" autoplay="true"></video>
+				</div>
+			</div>
+			<div class="section8 section" id="section8">
+				<h2>Geolocalización</h2>
+				<div class="position">
+					<p class="section8-p">Tu position actual es:</p>
+					<p class="section8-p">Latitud: <strong class="latitud"></strong></p>
+					<p class="section8-p">
+						Longitud: <strong class="longitude"></strong>
+					</p>
+					<p class="section8-p">
+						Precisión: <strong class="accuracy"></strong> metros
+					</p>
+					<a href="" class="a-position-maps" target="_blank"
+						><p class="section8-p">Ver en google maps</p></a
+					>
+				</div>
+			</div>
+			<div class="section9 section" id="section9">
+				<h2>Filtro de busqueda</h2>
+				<div class="input-search">
+					<input
+						type="search"
+						name="Buscar"
+						id="search-card"
+						placeholder="Buscar"
+					/>
+				</div>
+				<section class="cards">
+					<figure class="card">
+						<img src="https://placeimg.com/200/200/tech" alt="tech" />
+						<figcaption>Tech</figcaption>
+					</figure>
+					<figure class="card">
+						<img src="https://placeimg.com/200/200/animals" alt="animals" />
+						<figcaption>Animals</figcaption>
+					</figure>
+					<figure class="card card2">
+						<img src="https://placeimg.com/200/200/people" alt="people" />
+						<figcaption>People</figcaption>
+					</figure>
+					<figure class="card">
+						<img src="https://placeimg.com/200/200/arch" alt="arch" />
+						<figcaption>Arch</figcaption>
+					</figure>
+					<figure class="card">
+						<img src="https://placeimg.com/200/200/nature" alt="nature" />
+						<figcaption>Nature</figcaption>
+					</figure>
+					<figure class="card">
+						<img src="https://placeimg.com/200/200/any" alt="any" />
+						<figcaption>Any</figcaption>
+					</figure>
+				</section>
+			</div>
+			<div class="section10 section" id="section10">
+				<h2>Sorteo Digital</h2>
+				<ul>
+					<li class="lottery-item">JavaScript</li>
+					<li class="lottery-item">PHP</li>
+					<li class="lottery-item">JAVA</li>
+					<li class="lottery-item">C</li>
+					<li class="lottery-item">Python</li>
+					<li class="lottery-item">Ruby</li>
+					<li class="lottery-item">Go</li>
+					<li class="lottery-item">Visual Basic</li>
+					<li class="lottery-item">Rust</li>
+					<li class="lottery-item">Perl</li>
+				</ul>
+				<div class="button-lottery">
+					<button class="get-win">Obtener Ganador</button>
+				</div>
+			</div>
+			<div class="section11 section" id="section11">
+				<h2>Responsive Slider</h2>
+				<div class="container-slider">
+					<div class="slider-border">
+						<div class="slider-content1 slider-content">
+							<p>Hola!</p>
+						</div>
+						<div class="slider-content2 slider-content slider-content-hidden">
+							<p>Colombia</p>
+						</div>
+						<div class="slider-content3 slider-content slider-content-hidden">
+							<p>Singapore</p>
+						</div>
+						<div
+							class="slider-content4 slider-content slider-content-hidden"
+						></div>
+						<button class="slider-back">
+							<i class="fas fa-chevron-left"></i>
+						</button>
+						<button class="slider-forward">
+							<i class="fas fa-chevron-right"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="section12 section" id="section12">
+				<h2>Video inteligente</h2>
+				<div class="container-video">
+					<video src="https://mdn.github.io/learning-area/html/multimedia-and-embedding/video-and-audio-content/rabbit320.webm" controls width="640" height="480" muted="muted" id="video" class="video-smart">
+						<p>Tu navegador no soporta HTML5 video. Aquí está el <a href="https://mdn.github.io/learning-area/html/multimedia-and-embedding/video-and-audio-content/rabbit320.webm">enlace del video</a>.</p>
+					</video>
+				</div>
+			</div>
+			<div class="section13 section" id="section13">
+				<h2>Formulario de Contacto (Validaciones)</h2>
+				<h3>Envíanos tus comentarios</h3>
+					<form target="_blank" class="form-section-13"  action="https://formsubmit.co/andresfelipevillalba486@gmail.com" method="POST">
+						<input name="Nombre" type="text" placeholder="Escribe tu nombre" id="name-section13" required pattern="^([A-Za-zÁÉÍÓÚñáéíóúÑ]{0}?[A-Za-zÁÉÍÓÚñáéíóúÑ\']+[\s])+([A-Za-zÁÉÍÓÚñáéíóúÑ]{0}?[A-Za-zÁÉÍÓÚñáéíóúÑ\'])+[\s]?([A-Za-zÁÉÍÓÚñáéíóúÑ]{0}?[A-Za-zÁÉÍÓÚñáéíóúÑ\'])?$">
+						<div class="flag-name"></div>
+						<input name="Email"  type="email" name="" placeholder="Escribe tu email" id="email-section13" required pattern="^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$">
+						<div class="flag-email"></div>
+						<input name="Asunto" type="text" placeholder="Asunto a tratar" required  id="affair-section13">
+						<textarea name="Comentarios" placeholder="Escribe tus comentarios" required class="comments-section13" id="comments-section13" maxlength="255"></textarea>
+						<div class="flag-commet"></div>
+
+						<input type="submit" id="submit-section13" value="Enviar">
+					</form>
+					<div class="loader-contact-form">
+						<img src="./assets/loader.svg" alt="loader" class="none loader-contact"">
+					</div>
+					<p class="response-contact-form">Los datos han sido enviados correctamente</p>
+					
+				</div>
+			
+			</div>
+			<div class="section14 section" id="section14">
+				<h2>Narrador</h2>
+				<div class="speak">
+					<select name="" id="utterances">
+						<option value="Hola" >--- Elige la voz de tu narrador ---</option>
+					</select>
+					<textarea name="" id="speak-text" cols="30" rows="10" placeholder="Ingresa texto para leerlo..." maxlength="400"></textarea>
+					<button id="read">Leer texto</button>
+				</div>
+			</div>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+			<script src="./index.js" type="module"></script>
+		</main>
+		<div class="scrollSpy">
+			<a href="#section1" class="scrollSpy-a" id="section1-scrollSpy">Reloj digital y Alarma sonora</p></a>
+			<a href="#section2" class="scrollSpy-a" id="section2-scrollSpy">Eventos de teclado</p></a>
+					<a href="#section3" class="scrollSpy-a" id="section3-scrollSpy">Countdown</p></a>
+					<a href="#section4"class="scrollSpy-a" id="section4-scrollSpy">Responsive con JavaScript</p></a>
+					<a href="#section5"class="scrollSpy-a" id="section5-scrollSpy">Responsive tester</p></a>
+					<a href="#section6"class="scrollSpy-a" id="section6-scrollSpy">User Agent</p></a>
+					<a href="#section7"class="scrollSpy-a" id="section7-scrollSpy">Webcam</p></a>
+					<a href="#section8"class="scrollSpy-a" id="section8-scrollSpy">Geolocalización</p></a>
+					<a href="#section9"class="scrollSpy-a" id="section9-scrollSpy">Fitro de busqueda</p></a>
+					<a href="#section10"class="scrollSpy-a" id="section10-scrollSpy">Sorteo Digital</p></a>
+					<a href="#section11"class="scrollSpy-a" id="section11-scrollSpy">Responsive Slider</p></a>
+					<a href="#section12"class="scrollSpy-a" id="section12-scrollSpy">Video inteligente</p></a>
+					<a href="#section13"class="scrollSpy-a" id="section13-scrollSpy">Formulario 1</p></a>
+					<a href="#section14"class="scrollSpy-a" id="section14-scrollSpy">Narrador</p></a>
+
+		</div>
+		<div class="disconnect">¡No estas conectado a internet!</div>
+		<div class="connected">Conexión restablecida</div>
+	</body>
+</html>
