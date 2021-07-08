@@ -17,6 +17,8 @@
 	color: var(--color-font);
 	background: var(--background-color);
 	overflow-x: hidden;
+	width: 100% !important;
+	height: 100% !important;
 }
 
 p,
@@ -628,5 +630,14 @@ iframe {
 	.slider-border {
 		width: 85%;
 		min-width: 300px;
+	}
+	.video-smart {
+		width: 80%;
+		height: auto;
+	}
+	.container-video {
+		height: 80%;
+		aspect-ratio: auto;
+		height: 50%;
 	}
 }
