@@ -6,7 +6,7 @@ const voiceList = () => {
 	voices = synth.getVoices()
 	for (let voice of voices) {
 		let option = (d.createElement(
-			'opti   on'
+			'option'
 		).textContent = `${voice.name} ${voice.lang}`)
 		if (voices.default) {
 			option.textContent += ' -- DEFAULT'
